@@ -6,18 +6,22 @@ import (
 )
 
 func TestAdd(t *testing.T) {
-	expect1 := 2.0
-	actual1 := Add(1.0, 1.0)
-
-	if expect1 != actual1 {
-		t.Errorf("%v != %v", expect1, actual1)
+	var tests = []struct {
+		x    float64
+		y    float64
+		want float64
+	}{
+		{1, 1, 2},
+		{1.0, 1.0, 2},
+		{1.1, 1.1, 2.2},
+		{2.1, 2.1, 4.2},
+		{-1, -1, -2},
+		{-1.0, -1.0, -2.0},
 	}
-
-	expect2 := 2.2
-	actual2 := Add(1.1, 1.1)
-
-	if expect2 != actual2 {
-		t.Errorf("%v != %v", expect2, actual2)
+	for _, test := range tests {
+		if got := Add(test.x, test.y); got != test.want {
+			t.Errorf("got: Add(%v, %v) = %v, want: %v", test.x, test.y, got, test.want)
+		}
 	}
 }
 
