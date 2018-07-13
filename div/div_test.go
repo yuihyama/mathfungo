@@ -24,6 +24,8 @@ func TestDiv(t *testing.T) {
 }
 
 func ExampleDiv() {
+	fmt.Println(Div(10, 2))
+	fmt.Println(Div(10.0, 2.0))
 	fmt.Println(Div(0, 0))
 	fmt.Println(Div(0.0, 0.0))
 	fmt.Println(Div(1, 0))
@@ -31,6 +33,8 @@ func ExampleDiv() {
 	fmt.Println(Div(-1, 0))
 	fmt.Println(Div(-1.0, 0))
 	// Output:
+	// 5
+	// 5
 	// NaN
 	// NaN
 	// +Inf
