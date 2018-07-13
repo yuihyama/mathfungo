@@ -7,9 +7,7 @@ import (
 
 func TestAdd(t *testing.T) {
 	var tests = []struct {
-		x    float64
-		y    float64
-		want float64
+		x, y, want float64
 	}{
 		{1, 1, 2},
 		{1.0, 1.0, 2},
