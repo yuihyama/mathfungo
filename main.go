@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/yuihyama/mathfungo/add"
+	// "./add"
+	// "./sub"
 )
 
 func main() {
 	fmt.Println("hello, world")
-	
-	fmt.Println(add.Add(1, 2))
+
+	// fmt.Println(add.Add(1, 2))
+	// fmt.Println(sub.Sub(2, 1))
 }
