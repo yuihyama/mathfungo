@@ -7,6 +7,7 @@ import (
 	// "./mul"
 	// "./div"
 	// "./square"
+	// "./cube"
 )
 
 func main() {
@@ -22,4 +23,5 @@ func main() {
 	// fmt.Println(div.Div(10.0, 2.0))
 	// fmt.Println(div.Div(6.4, 2.0))
 	// fmt.Println(square.Square(-2))
+	// fmt.Println(cube.Cube(-3))
 }
