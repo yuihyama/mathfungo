@@ -13,10 +13,10 @@ func TestPos(t *testing.T) {
 		{-0, 0},
 		{1, 1},
 		{1.1, 1.1},
-		{-1, 1},
-		{-1.1, 1.1},
+		{-1, -1},
+		{-1.1, -1.1},
 		{0.01, 0.01},
-		{-0.01, 0.01},
+		{-0.01, -0.01},
 	}
 	for _, test := range tests {
 		if got := Pos(test.x); got != test.want {
@@ -38,9 +38,9 @@ func ExamplePos() {
 	// 0
 	// 1
 	// 1.1
-	// 1
-	// 1.1
-	// 0.01
+	// -1
+	// -1.1
+	// -0.01
 }
 
 func BenchmarkPos(b *testing.B) {
