@@ -1,3 +1,3 @@
 package g
 
-const G = 9.80665
+const G = 6.67408e-11
