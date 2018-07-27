@@ -12,6 +12,7 @@ func ExampleIntSeq() {
 	fmt.Println(IntSeq(0, 10, 1))
 	fmt.Println(IntSeq(-3, 10, 1))
 	fmt.Println(IntSeq(0, 10, 2))
+	fmt.Println(IntSeq(0, 10, 3))
 	fmt.Println(IntSeq(0, 10, 0))
 	// Output:
 	// 0
@@ -20,6 +21,7 @@ func ExampleIntSeq() {
 	// 0 1 2 3 4 5 6 7 8 9 10
 	// -3 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 	// 0 2 4 6 8 10
+	// 0 3 6 9 10
 	// 0
 }
 
