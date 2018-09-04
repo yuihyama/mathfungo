@@ -1,1 +1,7 @@
 # mathfungo
+
+
+## License
+
+
+MIT License.
